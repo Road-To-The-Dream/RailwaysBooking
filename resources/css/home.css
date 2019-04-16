@@ -1,0 +1,12 @@
+#linksCities a {
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.main-title {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -1px;
+    font-family: 'Gotham Pro', 'Trebuchet MS', Helvetica, sans-serif;
+}
