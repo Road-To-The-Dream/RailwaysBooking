@@ -11,7 +11,7 @@
             <div class="shadow p-3 mb-5 bg-white rounded">
                 <div class="form-group row">
                     <div class="col error-pointOfDeparture">
-                        <select id="cities1" class="form-control">
+                        <select id="pointOfDeparture" class="form-control">
                             <option value="" disabled selected></option>
                             @foreach($cities as $key => $city)
                                 <option value="{{ $key }}">{{ $city }}</option>
@@ -19,27 +19,27 @@
                         </select>
 
                         <div id="linksCities">
-                            <a class="mr-1" href="#" onclick="addedCity1(1);return false;">Харьков</a>
-                            <a class="mr-1" href="#" onclick="addedCity1(2);return false;">Киев</a>
-                            <a class="mr-1" href="#" onclick="addedCity1(3);return false;">Кривой Рог</a>
-                            <a class="mr-1" href="#" onclick="addedCity1(4);return false;">Львов</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect(1);return false;">Харьков</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect(2);return false;">Киев</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect(3);return false;">Кривой Рог</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect(4);return false;">Львов</a>
                         </div>
                     </div>
                     <div class="col-1 ml-4">
                         <img src="img/arrow.png" alt="image">
                     </div>
                     <div class="col error-pointOfArrival">
-                        <select id="cities2" class="form-control">
+                        <select id="pointOfArrival" class="form-control">
                             <option value="" disabled selected></option>
                             @foreach($cities as $key => $city)
                                 <option value="{{ $key }}">{{ $city }}</option>
                             @endforeach
                         </select>
                         <div id="linksCities">
-                            <a class="mr-1" href="#" onclick="addedCity2(1);return false;">Харьков</a>
-                            <a class="mr-1" href="#" onclick="addedCity2(2);return false;">Киев</a>
-                            <a class="mr-1" href="#" onclick="addedCity2(3);return false;">Кривой Рог</a>
-                            <a class="mr-1" href="#" onclick="addedCity2(4);return false;">Львов</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect(1);return false;">Харьков</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect(2);return false;">Киев</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect(3);return false;">Кривой Рог</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect(4);return false;">Львов</a>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -63,31 +63,4 @@
             <div id="Request"></div>
         </div>
     </div>
-    <script>
-        $(document).ready(function () {
-            $('#cities1').val(1).trigger('change');
-            $('#cities2').val(2).trigger('change');
-
-            $('#cities1').select2({
-                placeholder: "Откуда?",
-                allowClear: true
-            });
-            $('#cities2').select2({
-                placeholder: "Куда?",
-                allowClear: true
-            });
-        });
-
-        function addedCity1(city) {
-            $('#cities1').val(city).trigger('change');
-        };
-
-        function addedCity2(city) {
-            $('#cities2').val(city).trigger('change');
-        }
-
-        $('#datetime').datetimepicker({
-            minDate: '+1d'
-        });
-    </script>
 @endsection

@@ -10,13 +10,13 @@ function getTrips() {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-    var delay = 10;
+    let delay = 10;
     $.ajax({
         type: 'POST',
         url: 'routes',
         data: {
-            pointOfDeparture: $('#cities1').val(),
-            pointOfArrival: $('#cities2').val(),
+            pointOfDeparture: $('#pointOfDeparture').val(),
+            pointOfArrival: $('#pointOfArrival').val(),
             date: $('#datetime').val()
         },
         beforeSend: function () {
@@ -38,14 +38,14 @@ function getTrips() {
         error: function (response) {
             $("div#Request").empty();
             $('div.text-danger').remove();
-            var errors = [];
-            for(var item in response['responseJSON']['errors']) {
-                var error = response['responseJSON']['errors'][item];
+            let errors = [];
+            for (let item in response['responseJSON']['errors']) {
+                let error = response['responseJSON']['errors'][item];
                 errors.push(item, error);
             }
 
-            for (i = 2; i <= errors.length; i = i + 2) {
-                $('.error-' + errors[i - 2]).append('<div class="text-danger">' + errors[i - 1][0] + '</div>');
+            for (let i = 2; i <= errors.length; i = i + 2) {
+                $('.error-' + errors[i - 2]).append('<div class="text-danger ml-1 mt-1" style="font-size: 14px;">' + errors[i - 1][0] + '</div>');
             }
         }
     });

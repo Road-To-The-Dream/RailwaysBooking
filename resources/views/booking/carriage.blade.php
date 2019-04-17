@@ -1,16 +1,3 @@
-<style>
-    #places li button {
-        width: 40px;
-    }
-</style>
-
-<style>
-    #places li {
-        list-style: none;
-        display: inline;
-    }
-</style>
-
 <div id="placesBlock">
     <div class="border border-secondary mt-4">
         <div class="row">
@@ -49,7 +36,6 @@
         </button>
     </div>
 </div>
-
 <script>
     $(document).ready(function () {
         let settings = {

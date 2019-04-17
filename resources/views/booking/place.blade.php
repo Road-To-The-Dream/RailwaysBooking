@@ -42,10 +42,3 @@
         </div>
     </div>
 </div>
-<script>
-    $(document).ready(function () {
-        $(".privilege").on("click", function () {
-
-        });
-    })
-</script>

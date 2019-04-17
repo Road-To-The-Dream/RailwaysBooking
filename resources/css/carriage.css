@@ -1,0 +1,8 @@
+#places li button {
+    width: 40px;
+}
+
+#places li {
+    list-style: none;
+    display: inline;
+}
