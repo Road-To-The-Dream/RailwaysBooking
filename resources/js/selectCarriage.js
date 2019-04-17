@@ -1,5 +1,5 @@
 function selectCarriage(id) {
-    var delay = 10;
+    let delay = 10;
     $.ajax({
         type: 'POST',
         url: 'carriage',

@@ -17,6 +17,7 @@ mix.js('resources/js/app.js', 'public/js')
 mix.scripts([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js',
+    'node_modules/select2/dist/js/select2.full.js',
     'resources/js/showRoutes.js',
     'resources/js/showTrains.js',
     'resources/js/info.js',
@@ -27,9 +28,11 @@ mix.scripts([
 ], 'public/js/app.js');
 
 mix.styles([
+    'node_modules/bootstrap/dist/css/bootstrap.css',
     'resources/css/login.css',
     'resources/css/base.css',
     'node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css',
+    'node_modules/select2/dist/css/select2.css',
     'resources/css/home.css',
     'resources/css/carriage.css',
 ], 'public/css/app.css');

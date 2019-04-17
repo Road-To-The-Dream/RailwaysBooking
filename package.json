@@ -24,6 +24,7 @@
     "sass": "^1.15.2",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10",
-    "jquery-datetimepicker": "^2.3.7"
+    "jquery-datetimepicker": "^2.3.7",
+    "select2": "^*"
   }
 }

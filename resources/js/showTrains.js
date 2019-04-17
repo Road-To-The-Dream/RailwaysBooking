@@ -1,5 +1,5 @@
 function showTrain(tripId, trainId, typeId) {
-    var delay = 10;
+    let delay = 10;
     $.ajax({
         type: 'POST',
         url: 'train',

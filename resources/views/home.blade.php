@@ -19,10 +19,10 @@
                         </select>
 
                         <div id="linksCities">
-                            <a class="mr-1" href="#" onclick="addCityInSelect(1);return false;">Харьков</a>
-                            <a class="mr-1" href="#" onclick="addCityInSelect(2);return false;">Киев</a>
-                            <a class="mr-1" href="#" onclick="addCityInSelect(3);return false;">Кривой Рог</a>
-                            <a class="mr-1" href="#" onclick="addCityInSelect(4);return false;">Львов</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect('pointOfDeparture', 1);return false;">Харьков</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect('pointOfDeparture', 2);return false;">Киев</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect('pointOfDeparture', 3);return false;">Кривой Рог</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect('pointOfDeparture', 4);return false;">Львов</a>
                         </div>
                     </div>
                     <div class="col-1 ml-4">
@@ -36,10 +36,10 @@
                             @endforeach
                         </select>
                         <div id="linksCities">
-                            <a class="mr-1" href="#" onclick="addCityInSelect(1);return false;">Харьков</a>
-                            <a class="mr-1" href="#" onclick="addCityInSelect(2);return false;">Киев</a>
-                            <a class="mr-1" href="#" onclick="addCityInSelect(3);return false;">Кривой Рог</a>
-                            <a class="mr-1" href="#" onclick="addCityInSelect(4);return false;">Львов</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect('pointOfArrival', 1);return false;">Харьков</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect('pointOfArrival', 2);return false;">Киев</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect('pointOfArrival', 3);return false;">Кривой Рог</a>
+                            <a class="mr-1" href="#" onclick="addCityInSelect('pointOfArrival', 4);return false;">Львов</a>
                         </div>
                     </div>
                     <div class="col-md-2">
